@@ -1,0 +1,20 @@
+<div id="center-panel" class="col-md-6">
+	<div id="main-player" class="hidden">
+		<% include ./currently_playing %>
+	</div>				
+	<form id="search-form">
+		<div class="search">
+			<span class="fa fa-search"></span>
+			<input type="text" id="query" value="" class="form-control" placeholder="Search music">
+		</div>
+	</form>
+	<div id="results">
+		<div class="hidden placeholder">
+			<% include ./search_item %>
+		</div>
+        <i class="hidden fa fa-spinner fa-spin fa-3x fa-fw"></i>
+        <span class="sr-only">Loading...</span>
+		<ul class="list-group">            
+        </ul>
+	</div>
+</div>

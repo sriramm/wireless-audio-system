@@ -1,0 +1,15 @@
+.create-room.btn .fa {
+    padding-right: 10px;
+}
+
+#room-form {
+    width: 50%;
+}
+
+#room-form h4 {
+    margin-bottom: 20px;
+}
+
+.room .lock {
+	padding-right: 5px;
+}

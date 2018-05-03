@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/common.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+        <div class="container">
+			<div class="row">
+                <% include ./partials/index/header %>
+				<% include ./partials/index/left_panel %>
+				<% include ./partials/index/center_panel %>
+				<% include ./partials/index/right_panel %>
+			</div>
+        </div>
+		
+		<script type="text/javascript" src="/javascripts/util.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="/javascripts/index/socket.io.client.js"></script>
+		<script type="text/javascript" src="/javascripts/index/music_client.js"></script>
+		<script type="text/javascript" src="/javascripts/index/event_manager.js"></script>
+		<script type="text/javascript" src="/javascripts/index/player.js"></script>
+		<script type="text/javascript" src="/javascripts/index/index.js"></script>
+        <script type="text/javascript" src="/javascripts/index/right_panel.js"></script>
+        
+        <script>
+            SpotifyClient.init('<%= spotify_client_id %>', '<%= spotify_redirect_uri %>');
+            RoomController.init(<%= room_id %>, '<%= room_name %>', <%= room_locked %>, '<%= room_password %>');
+            SocketIOClient.init();
+            ReceiverController.init();
+            ReceiverController.Backend.getReceivers();
+            Player.Backend.getCurrentlyPlaying();
+        </script>
+	</body>
+</html>

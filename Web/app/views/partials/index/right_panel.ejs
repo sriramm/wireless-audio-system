@@ -1,0 +1,14 @@
+<% nReceivers = locals.receivers ? receivers.length : 0 %>
+
+<div id="right-panel" class="col-md-3">
+	<h3 id="receiver-count">Speakers (<span><%= nReceivers %></span>)</h3>
+    <div id="receivers">
+        <div class="hidden placeholder">
+			<% include ./receiver %>
+		</div>
+        <ul class="list-group">
+        </ul>
+	</div>
+    <button type="button" class="add-receiver btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i>Add speaker</button>
+    <% include ./receiver_form %>
+</div>

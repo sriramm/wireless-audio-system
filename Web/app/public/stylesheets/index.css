@@ -1,0 +1,134 @@
+#room-header {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0;
+}
+
+#lock {
+    font-size: 20px;
+}
+
+#results .fa-spinner {
+    margin: auto;
+    display: block;
+}
+
+#results {
+  padding-top: 20px;
+}
+
+#delete-room {
+    float: right;
+}
+
+/* search result */
+.search-item .title-and-artist {
+    padding-top: 10px;
+    clear: both;
+}
+
+.search-item .song-title {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.search-item .song-title a {
+    color: #333;
+}
+
+.search-item .song-title a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.search-item .song-artist {
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.search-item .cover-art {
+  width: 8rem;
+  margin-right: 15px;
+}
+
+.search-item .cover-art img {
+  height: 100%;
+  width: 100%;
+}
+/* search result */
+
+#search-form {
+  margin-top: 1.5em;
+}
+
+/* search bar */
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.search input {
+  width: 100%;
+  height: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+  text-indent: 32px;
+}
+
+.search .fa-search { 
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+/* search bar */
+
+/* play/pause button */
+.play-pause-button {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+}
+
+.play-pause-button.paused {
+  border-style: double;
+  border-width: 0px 0 0px 60px;
+}
+
+.play-pause-button:hover {
+	border-color: transparent transparent transparent #404040;
+}
+/* play/pause button */
+
+#music-sources .fa {
+  padding-right: 10px;
+}
+
+#left-panel .panel-footer  .fa {
+	padding-right: 5px;
+}
+
+#left-panel .panel-footer a:hover {
+	color: #337ab7;
+    text-decoration: none;
+}
+
+.add-receiver.btn .fa {
+    padding-right: 10px;
+}
+
+.receiver span {
+    vertical-align: sub;
+}

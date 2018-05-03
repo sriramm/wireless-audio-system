@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Auth Callback</title>
+		<meta charset="utf-8">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="loading"><h1>Loading...</h1></div>
+		
+		<script type="text/javascript" src="/javascripts/spotify_callback.js"></script>
+        
+        <script>
+            callback('<%= accepted_origin %>');
+        </script>
+	</body>
+</html>
